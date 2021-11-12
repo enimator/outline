@@ -32,6 +32,7 @@ import Trello from "./Trello";
 import Typeform from "./Typeform";
 import Vimeo from "./Vimeo";
 import YouTube from "./YouTube";
+import Stream from "./Stream";
 import Image from "./components/Image";
 
 function matcher(Component) {
@@ -274,4 +275,12 @@ export default [
     component: YouTube,
     matcher: matcher(YouTube),
   },
+  {
+    title: "Stream",
+    keywords: "microsoft stream",
+    icon: () => <Img src="/images/stream.png" />,
+    component: Stream,
+    matcher: matcher(Stream),
+  },
+
 ];
